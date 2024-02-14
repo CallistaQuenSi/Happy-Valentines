@@ -1,0 +1,46 @@
+/*this css is for text.html*/
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #EEE7DA;
+}
+
+#container {
+    position: relative;
+}
+
+#box {
+    width: 350px;
+    height: 300px;
+    transition: transform 0.5s ease-in-out;
+    animation: kenyal 2s ease infinite; 
+    cursor: pointer;
+}
+
+@keyframes kenyal {
+    0% { 
+      transform: scale(1) translateY(5px); }
+    50% {
+      transform: scale(1.2) translateY(5px);
+    }
+    100% {
+      transform: scale(1) translateY(5px);
+    }
+  }
+
+#message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: pink;
+    padding: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+
