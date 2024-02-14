@@ -1,0 +1,64 @@
+/*this css is for index.html*/
+
+body {
+  background-color: #FFD1DA;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.open .card {
+  text-align: center;
+}
+
+.open .card img {
+  height: 100px;
+}
+
+.btn-shine {
+  padding: 12px 48px;
+  color: #ff3f3f;
+  background: linear-gradient(to right, #7b1b1b 0, #fc2c2c 10%, #7b1b1b 20%);
+  background-position: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+  font-weight: 600;
+  font-size: 50px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+button {
+  margin-top: 20px;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 200px;
+  }
+  100% {
+    background-position: 400px;
+  }
+}
+
+#box {
+  width: 75%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
